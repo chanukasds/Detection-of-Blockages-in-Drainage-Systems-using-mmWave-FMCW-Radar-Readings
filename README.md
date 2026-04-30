@@ -16,9 +16,6 @@ Binary captures are stored as `adc_data.bin` (Git LFS; see [.gitattributes](.git
 
 ## Dataset layout
 
-Readings are grouped by **pipe condition**, then by **trial** or by **distance from the bottom of the pipe** to the sensor (`10cm` … `25cm` folders; centimeters).
-
-
 | Top-level folder            | Description                                                                                      |
 | --------------------------- | ------------------------------------------------------------------------------------------------ |
 | `Empty Pipe`                | Dry / empty pipe; trials numbered `1` … `8`                                                      |
@@ -35,6 +32,8 @@ Empty Pipe/<trial>/adc_data.bin
 ```
 
 The second pattern applies to `Water Only(Baseline)`, `PebblesAndSoil with Water`, and `OtherDebris with Water`. The `distance` folder is one of `10cm`, `15cm`, `20cm`, `25cm` and denotes **distance from the bottom of the pipe** to the sensor for that capture.
+
+**Note that the blockage material is always at `10cm` from the bottom of the pipe.**
 
 Example paths:
 
